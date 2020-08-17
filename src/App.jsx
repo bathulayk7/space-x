@@ -1,12 +1,12 @@
 import React from "react";
-import { Header } from "./components/Header/Header";
 import "./style.css";
-import { Launch } from "./components/Header/launch/Launch";
+import { Header } from "./components/Header/Header";
+import { Launch } from "./components/launch/Launch";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header/>
       <Launch
         banner="https://farm8.staticflickr.com/7619/16763151866_35a0a4d8e1_o.jpg"
         title="FalconSat" 
