@@ -2,23 +2,13 @@ import React from "react";
 import "./style.css";
 import { Header } from "./components/Header/Header";
 import { Launch } from "./components/launch/Launch";
+import { LaunchList } from "./components/LaunchList/LaunchList";
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Launch
-        banner="https://farm8.staticflickr.com/7619/16763151866_35a0a4d8e1_o.jpg"
-        title="FalconSat" 
-        launchDate="2006-03-25T10:30:00+12:00"
-        discription="some discription"
-      />
-      <Launch
-        banner="https://farm8.staticflickr.com/7619/16763151866_35a0a4d8e1_o.jpg"
-        title="FalconSat" 
-        launchDate="2006-03-25T10:30:00+12:00"
-        discription="some discription"
-      />
+      <LaunchList/>
     </div>
   );
 }
