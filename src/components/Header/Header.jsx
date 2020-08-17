@@ -4,7 +4,7 @@ export class Header extends React.Component{
     render(){
         return(
             <div className="header">
-                <h1>Welcom to Space-x</h1>
+                <h1>Welcome To Space-X</h1>
             </div>
         )
     }
