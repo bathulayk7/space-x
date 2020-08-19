@@ -2,6 +2,7 @@ import React from "react";
 import { Launch } from "../launch/Launch";
 import "./style.css";
 import axios from "axios";
+import {Link} from "react-router-dom"
 
 export class LaunchList extends React.Component {
   state = {
@@ -28,12 +29,13 @@ export class LaunchList extends React.Component {
       "https://twistedsifter.files.wordpress.com/2012/05/nasa-rocket-launch-high-quality-6.jpg?w=800&h=674"
       :launch.links.flickr_images[0]
       return (
-        <Launch key={"launch_"+i}
-          banner={img}
+        <Link to={"/launch-view/"+launch.flight_number} key={"launch_"+i}>
+        <Launch 
+         // banner={img}
           title={launch.mission_name}
           launchDate={launch.launch_date_local}
           discription={launch.details}
-        />
+        /></Link>
       );
     });
     return launchListComponents
