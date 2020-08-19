@@ -23,7 +23,7 @@ export class LaunchList extends React.Component {
       });
   };
   launchList = () => {
-    const launchLsitComponents=this.state.launches.map((launch,i) => {
+    const launchListComponents=this.state.launches.map((launch,i) => {
       const img=launch.links.flickr_images.length===0?
       "https://twistedsifter.files.wordpress.com/2012/05/nasa-rocket-launch-high-quality-6.jpg?w=800&h=674"
       :launch.links.flickr_images[0]
@@ -36,7 +36,7 @@ export class LaunchList extends React.Component {
         />
       );
     });
-    return launchLsitComponents
+    return launchListComponents
   };
   render() {
     // console.log(this.state.launches[0]);
