@@ -32,7 +32,7 @@ export class LaunchList extends React.Component {
       return (
         <Link to={"/launch/" + launch.flight_number} key={"launch_" + i}>
           <Launch
-            //banner={img}
+            banner={img}
             title={launch.mission_name}
             launchDate={launch.launch_date_local}
             discription={launch.details}
